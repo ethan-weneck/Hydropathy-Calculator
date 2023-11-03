@@ -1,0 +1,39 @@
+#! /usr/bin/perl
+
+#just a simple example input here
+
+my $aa = uc("$ARGV[0]");
+
+#use bbedit to use reg expression in the file. Search>find> ^([A-Z])>replace>"\1"
+
+uc();
+
+my %kd = (
+"I"=>4.92
+,"L"=>4.92
+,"V"=>4.04
+,"P"=>4.04
+,"F"=>2.98
+,"W"=>2.33
+,"A"=>1.81
+,"C"=>1.28
+,"G"=>0.94
+,"Y"=>-0.14
+,"T"=>-2.57
+,"S"=>-3.40
+,"H"=>-4.66
+,"Q"=>-5.54
+,"K"=>-5.55
+,"N"=>-6.64
+,"E"=>-6.81
+,"D"=>-8.72
+,"R"=>-14.92
+);
+
+# print kd score to STDOUT
+print "$kd{$aa}";
+print "\n";
+
+#print "$kd{G}";
+#print "\n";
+
